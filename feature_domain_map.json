@@ -1,0 +1,34 @@
+{
+  "nutritional_metabolic": [
+    "BMI",
+    "height_cm",
+    "weight_kg",
+    "HbA1c",
+    "fasting_glucose",
+    "total_cholesterol",
+    "HDL",
+    "triglycerides",
+    "LDL"
+  ],
+  "behavioral": [
+    "smoking_status",
+    "MET_min_week",
+    "meets_activity_guideline",
+    "sedentary_minutes_day",
+    "PHQ9_score",
+    "PHQ9_category"
+  ],
+  "demographic_fairness": [
+    "age",
+    "sex",
+    "race_ethnicity",
+    "education",
+    "income_poverty_ratio"
+  ],
+  "clinical_structural": [
+    "arthritis",
+    "arthritis_type",
+    "medication_count",
+    "polypharmacy"
+  ]
+}

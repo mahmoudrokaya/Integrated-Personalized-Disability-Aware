@@ -1,0 +1,5 @@
+﻿cycle_file,rows,columns,has_disability_stage,disability_stage_nonmissing
+NHANES_2011-2012_final_processed.csv,2469,33,True,2469
+NHANES_2013-2014_final_processed.csv,2557,33,True,2557
+NHANES_2015-2016_final_processed.csv,2601,33,True,2601
+NHANES_2017-2018_final_processed.csv,2872,33,True,2872

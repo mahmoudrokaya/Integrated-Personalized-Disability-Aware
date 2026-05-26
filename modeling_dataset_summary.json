@@ -1,0 +1,83 @@
+{
+  "training_file": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\Pre-Processed-Cycles\\corrected\\NHANES_pooled_filled_corrected.csv",
+  "external_file": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\data_processed_later_cycles\\corrected\\NHANES_later_cycles_pooled_filled_corrected.csv",
+  "output_folder": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\modeling_ready",
+  "selected_shared_feature_count": 24,
+  "selected_shared_features": [
+    "BMI",
+    "HDL",
+    "HbA1c",
+    "LDL",
+    "MET_min_week",
+    "PHQ9_category",
+    "PHQ9_score",
+    "age",
+    "arthritis",
+    "arthritis_type",
+    "education",
+    "fasting_glucose",
+    "height_cm",
+    "income_poverty_ratio",
+    "medication_count",
+    "meets_activity_guideline",
+    "polypharmacy",
+    "race_ethnicity",
+    "sedentary_minutes_day",
+    "sex",
+    "smoking_status",
+    "total_cholesterol",
+    "triglycerides",
+    "weight_kg"
+  ],
+  "domain_map": {
+    "nutritional_metabolic": [
+      "BMI",
+      "height_cm",
+      "weight_kg",
+      "HbA1c",
+      "fasting_glucose",
+      "total_cholesterol",
+      "HDL",
+      "triglycerides",
+      "LDL"
+    ],
+    "behavioral": [
+      "smoking_status",
+      "MET_min_week",
+      "meets_activity_guideline",
+      "sedentary_minutes_day",
+      "PHQ9_score",
+      "PHQ9_category"
+    ],
+    "demographic_fairness": [
+      "age",
+      "sex",
+      "race_ethnicity",
+      "education",
+      "income_poverty_ratio"
+    ],
+    "clinical_structural": [
+      "arthritis",
+      "arthritis_type",
+      "medication_count",
+      "polypharmacy"
+    ]
+  },
+  "rows": {
+    "train_2011_2018": 7349,
+    "val_2011_2018": 1575,
+    "test_2011_2018": 1575,
+    "external_2017_2023": 16859
+  },
+  "columns": {
+    "train_2011_2018": 28,
+    "val_2011_2018": 28,
+    "test_2011_2018": 28,
+    "external_2017_2023": 29
+  },
+  "target_notes": {
+    "internal_2011_2018": "target_binary maps disability_stage 0-1 to 0 and 2-3 to 1.",
+    "external_later_cycles": "target_binary uses later-cycle disability_stage generated from WHQ fallback functional risk."
+  },
+  "scaling_notes": "Scaler fitted only on the 2011-2018 training split. Remaining missing values filled using training medians only."
+}

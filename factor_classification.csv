@@ -1,0 +1,35 @@
+factor,classification,group_membership,logical_rationale,expected_relation_to_disability
+SEQN,,administrative,,
+cycle,,administrative,,
+disability_stage,,target,,
+upper_limb_difficulty,structural_target_proximal,structural_disease,This is close to the disability construct and may act as a proximal structural indicator.,
+mobility_difficulty,structural_target_proximal,structural_disease,This is very close to the target construct and may strongly track disability severity.,
+adl_difficulty,structural_target_proximal,structural_disease,This is very close to the target construct and may strongly track disability severity.,
+age,high_value; core_causal,high_value,"Older age is historically associated with frailty, multimorbidity, and greater disability burden.",positive
+sex,core_causal,demographic_social,"Sex differences may influence body composition, disease patterns, and functional decline.",
+race_ethnicity,weak_or_contextual,demographic_social,"Race/ethnicity may reflect disparities, access, environment, and population heterogeneity rather than direct biology.",
+education,weak_or_contextual,demographic_social,"Education is a socioeconomic proxy related to health literacy, prevention, and healthcare utilization.",negative_or_protective
+income_poverty_ratio,weak_or_contextual,demographic_social,Income-poverty ratio captures socioeconomic resources that may affect disease burden and function.,negative_or_protective
+BMI,high_value; derived; potentially_redundant,"high_value, derived","BMI summarizes body-size status and is linked to obesity, metabolic disease, frailty, and mobility limitation.",positive_or_u_shaped
+height_cm,redundant_when_BMI_present,other_predictor,"Height is a body-size measure, useful mainly through its contribution to BMI and body composition context.",
+weight_kg,redundant_when_BMI_present,other_predictor,Weight reflects body mass burden and may influence mobility and metabolic status.,
+mean_SBP,high_value; core_causal,high_value,Systolic blood pressure reflects vascular burden and is often linked with aging and chronic disease.,positive
+mean_DBP,redundant_or_secondary,cardiometabolic_expansion,Diastolic blood pressure complements SBP but is often less informative than systolic pressure in older adults.,weak_positive
+max_grip_strength,high_value; core_causal,high_value,"Grip strength is a recognized marker of frailty, sarcopenia, and functional reserve.",negative
+HbA1c,high_value; core_causal,high_value,HbA1c reflects chronic glycemic control and long-term metabolic burden.,positive
+fasting_glucose,core_causal,cardiometabolic_expansion,Fasting glucose reflects current glycemic status and complements HbA1c.,positive
+total_cholesterol,core_causal_or_secondary,cardiometabolic_expansion,"Total cholesterol reflects cardiometabolic burden, though it may not directly map to disability.",uncertain
+HDL,core_causal_or_secondary,cardiometabolic_expansion,HDL is a protective lipid marker and may be inversely related to metabolic risk.,negative_or_protective
+triglycerides,core_causal_or_secondary,cardiometabolic_expansion,Triglycerides often indicate insulin resistance and cardiometabolic dysfunction.,positive
+LDL,derived; potentially_redundant,"cardiometabolic_expansion, derived","LDL is clinically relevant but partially derived from other lipid variables, so redundancy is possible.",positive
+smoking_status,core_causal,behavioral_expansion,Smoking reflects a damaging behavioral exposure associated with vascular and systemic disease.,positive
+MET_min_week,high_value; core_causal,high_value,Weekly MET-minutes summarize physical activity and are expected to be protective against disability.,negative
+meets_activity_guideline,derived; potentially_redundant,"behavioral_expansion, derived","A thresholded summary of activity level, mainly useful for simplified interpretation.",negative
+sedentary_minutes_day,high_value; core_causal,behavioral_expansion,Sedentary behavior captures inactivity burden beyond exercise quantity.,positive
+PHQ9_score,high_value; core_causal,high_value,"Depression burden may worsen physical function, motivation, and overall disability.",positive
+PHQ9_category,derived; potentially_redundant,derived,Categorized depression severity simplifies interpretation but may lose detail versus the raw score.,positive
+arthritis,high_value; core_causal,structural_disease,"Arthritis is a direct structural disease mechanism affecting pain, function, and disability.",positive
+arthritis_type,weak_or_contextual,structural_disease,Arthritis subtype may add nuance but is conditional and often sparse.,
+medication_count,high_value; core_causal,high_value,Medication burden is a practical proxy for multimorbidity and overall clinical complexity.,positive
+polypharmacy,derived; potentially_redundant,derived,Binary medication burden summary; useful clinically but less informative than the count.,positive
+SEQN_cycle_key,,administrative,,

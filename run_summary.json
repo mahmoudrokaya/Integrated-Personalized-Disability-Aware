@@ -1,0 +1,28 @@
+{
+  "input_file": "D:\\47\\472\\New-Papers\\Atlam1-2026\\corrected\\NHANES_pooled_filled_corrected.csv",
+  "output_dir": "D:\\47\\472\\New-Papers\\Atlam1-2026\\scientific_audit_corrected",
+  "n_rows": 10499,
+  "n_columns": 34,
+  "n_predictors": 30,
+  "high_value_set": [
+    "age",
+    "max_grip_strength",
+    "BMI",
+    "MET_min_week",
+    "PHQ9_score",
+    "medication_count",
+    "HbA1c",
+    "mean_SBP"
+  ],
+  "generated_files": [
+    "dataset_overview.csv",
+    "factor_classification.csv",
+    "individual_factor_audit.csv",
+    "group_incremental_questions.csv",
+    "stage_numeric_summary.csv",
+    "stage_categorical_summary.csv",
+    "dependency_checks.csv",
+    "known_assumption_checks.csv",
+    "scientific_audit_report.md"
+  ]
+}

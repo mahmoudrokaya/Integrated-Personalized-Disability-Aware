@@ -1,0 +1,6 @@
+derived_factor,source_factors,dependency_type,check_metric,status,note
+BMI,"height_cm, weight_kg",Deterministic,0.0,ok,BMI is calculated from height and weight. Rows with |BMI - recalculated BMI| > 2 = 0.
+LDL,"total_cholesterol, HDL, triglycerides",Derived,0.0,investigate,LDL is linked to other lipid measures and often formula-derived. Rows with |LDL - formula| > 20 = 0; LDL > total cholesterol rows = 38.
+PHQ9_category,PHQ9_score,Deterministic,248.0,investigate,PHQ9 category is derived from PHQ9 score. PHQ9 category mismatches = 248.
+meets_activity_guideline,MET_min_week,Deterministic,0.0,ok,Guideline attainment is derived from weekly MET-minutes. Guideline mismatches = 0.
+polypharmacy,medication_count,Deterministic,0.0,ok,Polypharmacy is derived from medication count threshold. Polypharmacy mismatches = 0.

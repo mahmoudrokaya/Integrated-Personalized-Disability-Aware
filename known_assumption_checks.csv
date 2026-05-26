@@ -1,0 +1,9 @@
+factor,expected_pattern,scientific_assumption,observed_metric,metric_value,p_value,verdict,raise_hand
+age,positive,Older age should be associated with higher disability stage.,spearman_rho_vs_disability_stage,0.0028,0.77656311,not_confirmed,yes
+max_grip_strength,negative,Grip strength should decrease as disability severity increases.,spearman_rho_vs_disability_stage,-0.1144,0.0,confirmed,no
+MET_min_week,negative,Physical activity should decrease as disability severity increases.,spearman_rho_vs_disability_stage,-0.1317,0.0,confirmed,no
+PHQ9_score,positive,Depression burden should increase with disability severity.,spearman_rho_vs_disability_stage,0.3358,0.0,confirmed,no
+medication_count,positive,Medication burden should increase with disability severity.,spearman_rho_vs_disability_stage,0.3134,0.0,confirmed,no
+HbA1c,positive,Poorer glycemic control should tend to increase with disability severity.,spearman_rho_vs_disability_stage,0.0755,0.0,confirmed,no
+mean_SBP,positive,Systolic blood pressure should generally increase with disability burden.,spearman_rho_vs_disability_stage,0.0034,0.73012741,not_confirmed,yes
+BMI,positive_or_u_shaped,BMI may increase with disability or show a non-linear/U-shaped relation.,spearman_rho_vs_disability_stage,0.1841,0.0,possibly_non_linear_or_positive,no

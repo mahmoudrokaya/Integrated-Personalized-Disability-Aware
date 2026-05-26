@@ -1,0 +1,12 @@
+metric,value
+n_rows,10499
+n_columns,34
+target,disability_stage
+n_admin_columns,3
+n_candidate_predictors,30
+n_numeric_columns,32
+n_missing_cells,11135
+target_stage_0_count,4075
+target_stage_1_count,511
+target_stage_2_count,3773
+target_stage_3_count,2140

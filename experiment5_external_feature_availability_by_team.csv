@@ -1,0 +1,6 @@
+﻿team,expected_features,available_features,mean_raw_missing_rate,availability_ratio
+behavioral,6,6,0.0,1.0
+demographic_fairness,5,5,0.0,1.0
+functional_disability,4,4,0.0,1.0
+nutritional_metabolic,9,9,0.0,1.0
+physiological,2,2,0.0,1.0

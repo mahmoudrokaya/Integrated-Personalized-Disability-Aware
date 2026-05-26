@@ -1,0 +1,120 @@
+{
+  "config": {
+    "modeling_ready_dir": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\modeling_ready",
+    "output_dir": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\Experiment1\\Results",
+    "train_file": "train_2011_2018.csv",
+    "val_file": "val_2011_2018.csv",
+    "test_file": "test_2011_2018.csv",
+    "target_candidates": [
+      "disability_stage",
+      "merge01_vs_23",
+      "functional_risk",
+      "target",
+      "label",
+      "y"
+    ],
+    "batch_size": 64,
+    "max_epochs": 50,
+    "patience": 8,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "hidden_dim": 16,
+    "learners_per_team": 3,
+    "dropout": 0.15,
+    "lambda_diversity": 0.01,
+    "lambda_cost": 1e-06,
+    "lambda_entropy": 0.005,
+    "utility_sensitivity": 0.1,
+    "min_team_weight": 0.0001,
+    "num_workers": 0,
+    "dpi": 300
+  },
+  "team_names": [
+    "behavioral",
+    "demographic_fairness",
+    "functional_disability",
+    "nutritional_metabolic",
+    "physiological"
+  ],
+  "domain_map": {
+    "nutritional_metabolic": [
+      "BMI",
+      "HDL",
+      "HbA1c",
+      "LDL",
+      "fasting_glucose",
+      "height_cm",
+      "total_cholesterol",
+      "triglycerides",
+      "weight_kg"
+    ],
+    "physiological": [
+      "cycle",
+      "target_binary"
+    ],
+    "behavioral": [
+      "MET_min_week",
+      "PHQ9_category",
+      "PHQ9_score",
+      "meets_activity_guideline",
+      "sedentary_minutes_day",
+      "smoking_status"
+    ],
+    "demographic_fairness": [
+      "age",
+      "education",
+      "income_poverty_ratio",
+      "race_ethnicity",
+      "sex"
+    ],
+    "functional_disability": [
+      "arthritis",
+      "arthritis_type",
+      "medication_count",
+      "polypharmacy"
+    ]
+  },
+  "feature_columns": [
+    "cycle",
+    "target_binary",
+    "BMI",
+    "HDL",
+    "HbA1c",
+    "LDL",
+    "MET_min_week",
+    "PHQ9_category",
+    "PHQ9_score",
+    "age",
+    "arthritis",
+    "arthritis_type",
+    "education",
+    "fasting_glucose",
+    "height_cm",
+    "income_poverty_ratio",
+    "medication_count",
+    "meets_activity_guideline",
+    "polypharmacy",
+    "race_ethnicity",
+    "sedentary_minutes_day",
+    "sex",
+    "smoking_status",
+    "total_cholesterol",
+    "triglycerides",
+    "weight_kg"
+  ],
+  "target_column": "disability_stage",
+  "class_mapping": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3
+  },
+  "num_classes": 4,
+  "hidden_dim": 16,
+  "num_learners_per_team": 3,
+  "dropout": 0.15,
+  "scaler_mean": null,
+  "scaler_scale": null,
+  "train_medians": null,
+  "categorical_encoders": {}
+}

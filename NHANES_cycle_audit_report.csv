@@ -1,0 +1,5 @@
+cycle,status,rows_demo,rows_age_20_plus,rows_nonmissing_disability_stage,rows_final,stage_0,stage_1,stage_2,stage_3,missing_files
+2011-2012,loaded_existing_processed_csv,,2469,2469,2469,1089,141,806,433,D:\47\472\New-Papers\Atlam1-2026\processed\NHANES_2011-2012_final_processed.csv
+2013-2014,loaded_existing_processed_csv,,2557,2557,2557,1063,105,929,460,D:\47\472\New-Papers\Atlam1-2026\processed\NHANES_2013-2014_final_processed.csv
+2015-2016,loaded_existing_processed_csv,,2601,2601,2601,915,133,970,583,D:\47\472\New-Papers\Atlam1-2026\processed\NHANES_2015-2016_final_processed.csv
+2017-2018,loaded_existing_processed_csv,,2872,2872,2872,1008,132,1068,664,D:\47\472\New-Papers\Atlam1-2026\processed\NHANES_2017-2018_final_processed.csv

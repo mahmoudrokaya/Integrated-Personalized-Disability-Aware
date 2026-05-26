@@ -1,0 +1,9 @@
+{
+  "parameters_less_than_10k": true,
+  "parameters_less_than_100k": true,
+  "memory_less_than_1mb_fp32": true,
+  "memory_less_than_100kb_fp32": true,
+  "approx_madds_per_sample": 2308,
+  "approx_madds_less_than_100k": true,
+  "approx_madds_less_than_1m": true
+}

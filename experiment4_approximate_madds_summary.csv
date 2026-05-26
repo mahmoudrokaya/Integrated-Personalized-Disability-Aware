@@ -1,0 +1,7 @@
+﻿component,input_dim,hidden_dim,num_classes,learners,approx_madds_per_sample,share_percent
+behavioral,6,16,4,3,496,21.49046793760832
+demographic_fairness,5,16,4,3,448,19.410745233968804
+functional_disability,4,16,4,3,400,17.33102253032929
+nutritional_metabolic,9,16,4,3,640,27.729636048526864
+physiological,2,16,4,3,304,13.171577123050259
+global_cooperative_aggregation,5,0,4,0,20,0.8665511265164645

@@ -1,0 +1,15 @@
+{
+  "experiment": "Experiment 4: Lightweight Edge Efficiency",
+  "device": "cpu",
+  "python": "3.10.11",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "torch": "2.10.0+cpu",
+  "cuda_available": false,
+  "checkpoint": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\Experiment1\\Results\\experiment1_best_model.pt",
+  "test_file": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\modeling_ready\\test_2011_2018.csv",
+  "output_folder": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\Experiment4\\Results",
+  "batch_scaling_policy": "ACO_Adaptive_Cooperation",
+  "best_latency_policy": "Experiment1_Learned_Nash",
+  "best_weighted_f1_per_ms_policy": "ACO_Adaptive_Cooperation",
+  "best_auc_per_ms_policy": "ACO_Adaptive_Cooperation"
+}

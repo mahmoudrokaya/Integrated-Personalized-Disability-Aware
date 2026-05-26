@@ -1,0 +1,7 @@
+﻿team,num_features,parameters_total,parameters_trainable,memory_kb_fp32
+behavioral,6,543,543,2.12109375
+demographic_fairness,5,495,495,1.93359375
+functional_disability,4,447,447,1.74609375
+nutritional_metabolic,9,687,687,2.68359375
+physiological,2,351,351,1.37109375
+cooperative_weight_layer,0,5,5,0.01953125

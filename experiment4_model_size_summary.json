@@ -1,0 +1,12 @@
+{
+  "total_parameters": 2528,
+  "trainable_parameters": 2528,
+  "parameter_memory_kb_fp32": 9.875,
+  "parameter_memory_mb_fp32": 0.0096435546875,
+  "trainable_parameter_memory_kb_fp32": 9.875,
+  "num_specialist_teams": 5,
+  "num_learners_per_team": 3,
+  "hidden_dim": 16,
+  "num_classes": 4,
+  "total_input_features": 26
+}

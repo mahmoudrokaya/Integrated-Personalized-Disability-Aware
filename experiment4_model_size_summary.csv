@@ -1,0 +1,2 @@
+﻿total_parameters,trainable_parameters,parameter_memory_kb_fp32,parameter_memory_mb_fp32,trainable_parameter_memory_kb_fp32,num_specialist_teams,num_learners_per_team,hidden_dim,num_classes,total_input_features
+2528,2528,9.875,0.0096435546875,9.875,5,3,16,4,26

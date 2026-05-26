@@ -1,0 +1,2 @@
+﻿parameters_less_than_10k,parameters_less_than_100k,memory_less_than_1mb_fp32,memory_less_than_100kb_fp32,approx_madds_per_sample,approx_madds_less_than_100k,approx_madds_less_than_1m
+True,True,True,True,2308,True,True

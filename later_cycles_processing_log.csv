@@ -1,0 +1,3 @@
+﻿cycle_label,processed,rows,columns,available_keys,missing_core
+2017-March_2020_PrePandemic,False,0,0,"BMX, BPX, DPQ, GHB, GLU, HDL, MCQ, PAQ, RXQ_RX, SMQ, TCHOL, TRIGLY","DEMO, PFQ"
+2021-August_2023,False,0,0,"BMX, BPX, DPQ, GHB, GLU, HDL, MCQ, PAQ, RXQ_RX, SMQ, TCHOL, TRIGLY","DEMO, PFQ"

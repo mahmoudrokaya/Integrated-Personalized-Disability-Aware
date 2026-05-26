@@ -1,0 +1,16 @@
+﻿cycle_label,cycle_code,component,page_url,xpt_links_found,page_accessible,main_page_accessible
+2017-March_2020_PrePandemic,2017-2020,Demographics,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&Cycle=2017-2020,1,True,True
+2017-March_2020_PrePandemic,2017-2020,Dietary,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Dietary&Cycle=2017-2020,14,True,True
+2017-March_2020_PrePandemic,2017-2020,Examination,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2017-2020,11,True,True
+2017-March_2020_PrePandemic,2017-2020,Laboratory,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&Cycle=2017-2020,48,True,True
+2017-March_2020_PrePandemic,2017-2020,Questionnaire,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2017-2020,39,True,True
+2021-August_2023,2021-2023,Demographics,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&Cycle=2021-2023,1,True,True
+2021-August_2023,2021-2023,Dietary,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Dietary&Cycle=2021-2023,10,True,True
+2021-August_2023,2021-2023,Examination,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2021-2023,4,True,True
+2021-August_2023,2021-2023,Laboratory,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&Cycle=2021-2023,29,True,True
+2021-August_2023,2021-2023,Questionnaire,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2021-2023,35,True,True
+2025-2026,2025-2026,Demographics,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&Cycle=2025-2026,0,True,True
+2025-2026,2025-2026,Dietary,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Dietary&Cycle=2025-2026,0,True,True
+2025-2026,2025-2026,Examination,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2025-2026,0,True,True
+2025-2026,2025-2026,Laboratory,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&Cycle=2025-2026,0,True,True
+2025-2026,2025-2026,Questionnaire,https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2025-2026,0,True,True

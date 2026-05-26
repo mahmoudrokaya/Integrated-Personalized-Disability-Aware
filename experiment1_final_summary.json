@@ -1,0 +1,349 @@
+{
+  "experiment": "Experiment 1: Organizational Training and Internal Cooperative Learning",
+  "paper_title": "Nash-Cooperative Swarm Intelligence for Lightweight Edge Learning Through Multi-Team Adaptive Optimization",
+  "methods_alignment": {
+    "multidomain_decomposition": true,
+    "specialist_lightweight_teams": true,
+    "intra_team_aggregation": true,
+    "nash_cooperative_team_weighting": true,
+    "prediction_loss": true,
+    "diversity_regularization": true,
+    "lightweight_cost_regularization": true,
+    "entropy_anti_domination_regularization": true,
+    "internal_train_validation_test_protocol": true,
+    "explainability_through_team_weights": true,
+    "lightweight_edge_reporting": true
+  },
+  "metadata": {
+    "target_column": "disability_stage",
+    "target_mapping": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "feature_columns": [
+      "cycle",
+      "target_binary",
+      "BMI",
+      "HDL",
+      "HbA1c",
+      "LDL",
+      "MET_min_week",
+      "PHQ9_category",
+      "PHQ9_score",
+      "age",
+      "arthritis",
+      "arthritis_type",
+      "education",
+      "fasting_glucose",
+      "height_cm",
+      "income_poverty_ratio",
+      "medication_count",
+      "meets_activity_guideline",
+      "polypharmacy",
+      "race_ethnicity",
+      "sedentary_minutes_day",
+      "sex",
+      "smoking_status",
+      "total_cholesterol",
+      "triglycerides",
+      "weight_kg"
+    ],
+    "num_features": 26,
+    "domain_features": {
+      "nutritional_metabolic": [
+        "BMI",
+        "HDL",
+        "HbA1c",
+        "LDL",
+        "fasting_glucose",
+        "height_cm",
+        "total_cholesterol",
+        "triglycerides",
+        "weight_kg"
+      ],
+      "physiological": [
+        "cycle",
+        "target_binary"
+      ],
+      "behavioral": [
+        "MET_min_week",
+        "PHQ9_category",
+        "PHQ9_score",
+        "meets_activity_guideline",
+        "sedentary_minutes_day",
+        "smoking_status"
+      ],
+      "demographic_fairness": [
+        "age",
+        "education",
+        "income_poverty_ratio",
+        "race_ethnicity",
+        "sex"
+      ],
+      "functional_disability": [
+        "arthritis",
+        "arthritis_type",
+        "medication_count",
+        "polypharmacy"
+      ]
+    },
+    "domain_indices": {
+      "nutritional_metabolic": [
+        2,
+        3,
+        4,
+        5,
+        13,
+        14,
+        23,
+        24,
+        25
+      ],
+      "physiological": [
+        0,
+        1
+      ],
+      "behavioral": [
+        6,
+        7,
+        8,
+        17,
+        20,
+        22
+      ],
+      "demographic_fairness": [
+        9,
+        12,
+        15,
+        19,
+        21
+      ],
+      "functional_disability": [
+        10,
+        11,
+        16,
+        18
+      ]
+    },
+    "domain_names": [
+      "nutritional_metabolic",
+      "physiological",
+      "behavioral",
+      "demographic_fairness",
+      "functional_disability"
+    ],
+    "domain_feature_counts": {
+      "nutritional_metabolic": 9,
+      "physiological": 2,
+      "behavioral": 6,
+      "demographic_fairness": 5,
+      "functional_disability": 4
+    },
+    "train_rows": 7349,
+    "val_rows": 1575,
+    "test_rows": 1575,
+    "num_classes": 4,
+    "input_files": {
+      "train": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\modeling_ready\\train_2011_2018.csv",
+      "validation": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\modeling_ready\\val_2011_2018.csv",
+      "test": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\modeling_ready\\test_2011_2018.csv"
+    },
+    "feature_preprocessing": {
+      "dropped_identifier_policy": "drop SEQN/id/participant_id/index/unnamed: 0 and high-cardinality *_id columns",
+      "categorical_encoders": {
+        "cycle": {
+          "2017-2018": 0,
+          "2013-2014": 1,
+          "2015-2016": 2,
+          "2011-2012": 3
+        }
+      },
+      "train_medians": {
+        "cycle": 1.0,
+        "target_binary": 1.0,
+        "BMI": -0.1588064730109095,
+        "HDL": -0.0118980606907248,
+        "HbA1c": -0.2322990111725924,
+        "LDL": -0.0581509519645407,
+        "MET_min_week": -0.3832098153626757,
+        "PHQ9_category": -0.5881025043791758,
+        "PHQ9_score": -0.2547549030870969,
+        "age": 0.111288200970914,
+        "arthritis": -0.9368131106534986,
+        "arthritis_type": -0.3331469395390545,
+        "education": -0.0600136664518134,
+        "fasting_glucose": -0.1997098269307608,
+        "height_cm": -0.0313901958034402,
+        "income_poverty_ratio": -0.2397659021333691,
+        "medication_count": -0.2991642864950039,
+        "meets_activity_guideline": -0.6604491516263129,
+        "polypharmacy": -0.7331082449030087,
+        "race_ethnicity": 0.1112215776395947,
+        "sedentary_minutes_day": -0.082409070101727,
+        "sex": 0.9882309055854148,
+        "smoking_status": 0.3671801483248956,
+        "total_cholesterol": -0.0993216496889127,
+        "triglycerides": -0.1087164439565365,
+        "weight_kg": -0.1378517306833281
+      },
+      "standard_scaler_mean": {
+        "cycle": 1.4512178527690842,
+        "target_binary": 0.563205878350796,
+        "BMI": -1.097381963651808e-16,
+        "HDL": 6.574623218354445e-17,
+        "HbA1c": 4.1188080750279316e-16,
+        "LDL": 1.5711415779155842e-16,
+        "MET_min_week": 1.933712711280719e-18,
+        "PHQ9_category": -5.801138133842157e-17,
+        "PHQ9_score": 1.3052560801144853e-16,
+        "age": -2.2237696179728268e-17,
+        "arthritis": -5.172681502675923e-17,
+        "arthritis_type": 1.4502845334605393e-16,
+        "education": 9.571877920839559e-17,
+        "fasting_glucose": -2.3011181264240554e-16,
+        "height_cm": 6.88401725215936e-16,
+        "income_poverty_ratio": 2.407472325544495e-16,
+        "medication_count": 1.933712711280719e-17,
+        "meets_activity_guideline": -6.67130885391848e-17,
+        "polypharmacy": 1.933712711280719e-17,
+        "race_ethnicity": 1.740341440152647e-17,
+        "sedentary_minutes_day": -2.784546304244235e-16,
+        "sex": 3.2873116091772225e-17,
+        "smoking_status": -7.348108302866732e-17,
+        "total_cholesterol": -4.92129885020943e-16,
+        "triglycerides": -1.982055529062737e-16,
+        "weight_kg": 7.15473703173866e-17
+      },
+      "standard_scaler_scale": {
+        "cycle": 1.1254041230107064,
+        "target_binary": 0.4959889282452828,
+        "BMI": 0.9999999999999999,
+        "HDL": 0.9999999999999999,
+        "HbA1c": 0.9999999999999999,
+        "LDL": 1.0,
+        "MET_min_week": 0.9999999999999999,
+        "PHQ9_category": 1.0,
+        "PHQ9_score": 1.0,
+        "age": 0.9999999999999999,
+        "arthritis": 1.0,
+        "arthritis_type": 0.9999999999999999,
+        "education": 0.9999999999999999,
+        "fasting_glucose": 1.0,
+        "height_cm": 0.9999999999999999,
+        "income_poverty_ratio": 1.0,
+        "medication_count": 1.0,
+        "meets_activity_guideline": 0.9999999999999999,
+        "polypharmacy": 1.0,
+        "race_ethnicity": 0.9999999999999999,
+        "sedentary_minutes_day": 1.0,
+        "sex": 1.0000000000000002,
+        "smoking_status": 1.0,
+        "total_cholesterol": 1.0,
+        "triglycerides": 1.0,
+        "weight_kg": 1.0
+      }
+    },
+    "architecture": {
+      "model_class": "NashCooperativeOrganizationalModel",
+      "hidden_dim": 16,
+      "learners_per_team": 3,
+      "dropout": 0.15,
+      "num_classes": 4,
+      "team_names": [
+        "nutritional_metabolic",
+        "physiological",
+        "behavioral",
+        "demographic_fairness",
+        "functional_disability"
+      ],
+      "team_input_dims": {
+        "nutritional_metabolic": 9,
+        "physiological": 2,
+        "behavioral": 6,
+        "demographic_fairness": 5,
+        "functional_disability": 4
+      }
+    }
+  },
+  "best_epoch": 7,
+  "validation_metrics": {
+    "loss": 0.4973147087248545,
+    "accuracy": 0.7644444444444445,
+    "balanced_accuracy": 0.525967370549253,
+    "precision_macro": 0.5262629337647708,
+    "recall_macro": 0.525967370549253,
+    "f1_macro": 0.5030048433259582,
+    "precision_weighted": 0.7057164332932793,
+    "recall_weighted": 0.7644444444444445,
+    "f1_weighted": 0.7137758059797493,
+    "mcc": 0.6478357621510795,
+    "mean_prediction_confidence": 0.735632614654208,
+    "roc_auc": 0.8866489550992616,
+    "average_precision": 0.5822670327895714,
+    "team_weights_mean": [
+      0.10713696479797363,
+      0.5581791400909424,
+      0.10526958107948303,
+      0.11782582104206085,
+      0.1115882620215416
+    ],
+    "team_utilities_mean": [
+      -1.2522693872451782,
+      -0.5145306587219238,
+      -1.4416613578796387,
+      -1.2969746589660645,
+      -1.5800284147262573
+    ]
+  },
+  "test_metrics": {
+    "loss": 0.5135584739276341,
+    "accuracy": 0.7390476190476191,
+    "balanced_accuracy": 0.5212629416159675,
+    "precision_macro": 0.5189994925460042,
+    "recall_macro": 0.5212629416159675,
+    "f1_macro": 0.48853272568768796,
+    "precision_weighted": 0.6844813605079387,
+    "recall_weighted": 0.7390476190476191,
+    "f1_weighted": 0.680316495737268,
+    "mcc": 0.622751514370891,
+    "mean_prediction_confidence": 0.7366255722159432,
+    "roc_auc": 0.8905273138111105,
+    "average_precision": 0.5903387937711719,
+    "team_weights_mean": [
+      0.10713696479797363,
+      0.5581791400909424,
+      0.10526958107948303,
+      0.11782582104206085,
+      0.1115882620215416
+    ],
+    "team_utilities_mean": [
+      -1.2636425495147705,
+      -0.5321252346038818,
+      -1.4342466592788696,
+      -1.307786464691162,
+      -1.5281699895858765
+    ]
+  },
+  "model_complexity_latency": {
+    "total_parameters": 2528,
+    "trainable_parameters": 2528,
+    "device": "cpu",
+    "python_version": "3.10.11",
+    "torch_version": "2.10.0+cpu",
+    "runtime_seconds": 9.995839595794678,
+    "mean_latency_seconds_per_sample": 6.064257501169447e-06,
+    "median_latency_seconds_per_sample": 5.667969162459485e-06,
+    "p95_latency_seconds_per_sample": 7.672812944292672e-06,
+    "evaluated_samples_after_warmup": 1383
+  },
+  "domain_team_order": [
+    "nutritional_metabolic",
+    "physiological",
+    "behavioral",
+    "demographic_fairness",
+    "functional_disability"
+  ],
+  "output_files_note": "All tables, figures, predictions, reports, and checkpoints are saved in the Experiment1 Results folder."
+}

@@ -1,0 +1,30 @@
+{
+  "modeling_ready_dir": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\modeling_ready",
+  "output_dir": "D:\\47\\472\\New-Papers\\Integrated Personalized Disability-Aware\\Experiments\\Experiment1\\Results",
+  "train_file": "train_2011_2018.csv",
+  "val_file": "val_2011_2018.csv",
+  "test_file": "test_2011_2018.csv",
+  "target_candidates": [
+    "disability_stage",
+    "merge01_vs_23",
+    "functional_risk",
+    "target",
+    "label",
+    "y"
+  ],
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 8,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "hidden_dim": 16,
+  "learners_per_team": 3,
+  "dropout": 0.15,
+  "lambda_diversity": 0.01,
+  "lambda_cost": 1e-06,
+  "lambda_entropy": 0.005,
+  "utility_sensitivity": 0.1,
+  "min_team_weight": 0.0001,
+  "num_workers": 0,
+  "dpi": 300
+}

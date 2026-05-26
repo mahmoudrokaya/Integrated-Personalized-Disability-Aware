@@ -1,0 +1,2 @@
+total_parameters,trainable_parameters,device,python_version,torch_version,runtime_seconds,mean_latency_seconds_per_sample,median_latency_seconds_per_sample,p95_latency_seconds_per_sample,evaluated_samples_after_warmup
+2528,2528,cpu,3.10.11,2.10.0+cpu,9.995839595794678,6.064257501169447e-06,5.667969162459485e-06,7.672812944292672e-06,1383

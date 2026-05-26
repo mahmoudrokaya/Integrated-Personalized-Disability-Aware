@@ -1,0 +1,16 @@
+{
+  "accuracy": 0.7371428571428571,
+  "balanced_accuracy": 0.5241771204158897,
+  "precision_macro": 0.5388564826686452,
+  "recall_macro": 0.5241771204158897,
+  "f1_macro": 0.49624714377169493,
+  "precision_weighted": 0.7018160133089592,
+  "recall_weighted": 0.7371428571428571,
+  "f1_weighted": 0.6844550626048906,
+  "mcc": 0.6225786063774696,
+  "mean_prediction_confidence": 0.5795589685440063,
+  "roc_auc_ovr": 0.874983187704576,
+  "average_precision_macro": 0.5857805438170255,
+  "loss": 0.8071595139730544,
+  "setting": "full_cooperative_model"
+}

@@ -1,0 +1,82 @@
+{
+  "target_column": "disability_stage",
+  "feature_columns": [
+    "cycle",
+    "target_binary",
+    "BMI",
+    "HDL",
+    "HbA1c",
+    "LDL",
+    "MET_min_week",
+    "PHQ9_category",
+    "PHQ9_score",
+    "age",
+    "arthritis",
+    "arthritis_type",
+    "education",
+    "fasting_glucose",
+    "height_cm",
+    "income_poverty_ratio",
+    "medication_count",
+    "meets_activity_guideline",
+    "polypharmacy",
+    "race_ethnicity",
+    "sedentary_minutes_day",
+    "sex",
+    "smoking_status",
+    "total_cholesterol",
+    "triglycerides",
+    "weight_kg"
+  ],
+  "class_values_original": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "class_to_index": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3
+  },
+  "domain_map": {
+    "nutritional_metabolic": [
+      "BMI",
+      "HDL",
+      "HbA1c",
+      "LDL",
+      "fasting_glucose",
+      "height_cm",
+      "total_cholesterol",
+      "triglycerides",
+      "weight_kg"
+    ],
+    "physiological": [
+      "target_binary"
+    ],
+    "behavioral": [
+      "MET_min_week",
+      "meets_activity_guideline",
+      "sedentary_minutes_day",
+      "smoking_status"
+    ],
+    "demographic_fairness": [
+      "age",
+      "education",
+      "income_poverty_ratio",
+      "race_ethnicity",
+      "sex",
+      "cycle"
+    ],
+    "functional_disability": [
+      "PHQ9_category",
+      "PHQ9_score",
+      "arthritis",
+      "arthritis_type",
+      "medication_count",
+      "polypharmacy"
+    ]
+  },
+  "num_classes": 4
+}

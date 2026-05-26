@@ -1,0 +1,6 @@
+﻿team,cooperative_weight,num_features,features
+behavioral,0.107136965,6,MET_min_week; PHQ9_category; PHQ9_score; meets_activity_guideline; sedentary_minutes_day; smoking_status
+demographic_fairness,0.55817926,5,age; education; income_poverty_ratio; race_ethnicity; sex
+functional_disability,0.10526956,4,arthritis; arthritis_type; medication_count; polypharmacy
+nutritional_metabolic,0.11782586,9,BMI; HDL; HbA1c; LDL; fasting_glucose; height_cm; total_cholesterol; triglycerides; weight_kg
+physiological,0.11158829,2,cycle; target_binary

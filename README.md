@@ -501,3 +501,10 @@ The work also reveals important limitations:
 These findings collectively support the paper’s central claim regarding:
 **Nash-cooperative swarm intelligence for lightweight adaptive edge learning.**
 
+### Statistical Validation Module
+
+`experiment6_statistical_validation.py` provides the formal statistical validation layer for the proposed organizational healthcare intelligence framework. This module performs 5-fold stratified cross-validation with repeated random seeds, reports mean ± standard deviation with 95% confidence intervals, and conducts paired significance testing between cooperation strategies. The generated outputs directly support the statistical validation and reproducibility analyses reported in the manuscript.
+### Fairness and Uncertainty Analysis
+
+`FairnessUncertaintyAnalysis.py` performs subgroup fairness evaluation and predictive uncertainty analysis on the internal NHANES testing cohort. The script reports demographic subgroup performance across sex, age, and race/ethnicity when available, together with calibration metrics including Expected Calibration Error (ECE), Maximum Calibration Error (MCE), and Brier score. These outputs support the fairness-consistency and uncertainty reporting presented in the manuscript.
+
